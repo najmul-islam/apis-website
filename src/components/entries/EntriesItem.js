@@ -1,13 +1,8 @@
 import React from "react";
-import { RiHashtag } from "react-icons/ri";
-import { ImPriceTags } from "react-icons/im";
 import { MdOutlineTag } from "react-icons/md";
-import { OverlayTrigger, Card, Col, Tooltip } from "react-bootstrap";
-import Tag from "../../icons/Tag";
+import { Card, Col } from "react-bootstrap";
+
 const EntriesItem = ({ entry }) => {
-  const renderToolip = (props) => (
-    <Tooltip {...props}>{entry.Description}</Tooltip>
-  );
   return (
     <Col md={6} xl={4} className="my-3">
       <Card border="dark">

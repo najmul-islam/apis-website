@@ -1,9 +1,9 @@
 import React from "react";
-import { Nav, Navbar, Container, Badge, Button } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useGetEntriesQuery } from "../../features/apis/entriesApi";
 const NavBar = () => {
-  const { data: entries, isLoading, isSuccess } = useGetEntriesQuery();
+  const { data: entries, isSuccess } = useGetEntriesQuery();
 
   return (
     <Navbar bg="dark" variant="dark">
